@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium&display=swap");
+
+.nav-head-right-tiket img {
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+.nav-head-right-tiket div {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  color: #ec7ab7;
+}
+.content-tiket {
+  height: 350px;
+  width: 100%;
+}
+.content-tiketsaya {
+  height: 350px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+.content-tiketsaya .title {
+  font-size: 20px;
+  padding: 10px 0 0 10px;
+}
+.content-tiketsaya .isi {
+  width: 90%;
+  height: 300px;
+  position: absolute;
+  left: 5%;
+  border: 1px solid black;
+}
+
+.content-tiketsaya .tiket-landtick {
+  padding-left: 15px;
+  padding-top: 12px;
+  font-family: "Oxanium";
+  font-weight: bold;
+  font-size: large;
+  color: #ec7ab7;
+}
+.isi {
+  margin-top: 10px;
+}
+.isi-tanggal {
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+.isi-tanggal div {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.isi-ket {
+  height: 200px;
+  width: 80%;
+}
+.isi-ket .nama-kereta {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 25px;
+  font-weight: bold;
+}
+.isi-ket .nama-kelas {
+  padding-left: 25px;
+}
+.isi-ket .status {
+  padding-top: 10px;
+  padding-left: 35px;
+  font-size: 12px;
+}
+.bulet {
+  height: 10px;
+  width: 10px;
+  background-color: #ec7ab7;
+  border-radius: 100%;
+}
+.isi-ket .atas {
+  position: absolute;
+  top: 60px;
+  left: 160px;
+  background-color: #f2f2f2;
+  border: 1px solid #ec7ab7;
+}
+.garis {
+  position: absolute;
+  width: 50px;
+  height: 0px;
+  left: 140px;
+  top: 100px;
+  border: 1px solid #d0d0d0;
+  transform: rotate(90deg);
+}
+.isi-ket .bawah {
+  position: absolute;
+  top: 130px;
+  left: 160px;
+}
+.keberangkatan {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  position: absolute;
+  left: 210px;
+  top: 60px;
+}
+.keberangkatan span {
+  font-size: 12px;
+  color: #959595;
+}
+.tiba-tujuan {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  position: absolute;
+  left: 210px;
+  top: 120px;
+}
+.tiba span {
+  font-size: 12px;
+  color: #959595;
+}
+.stasiun-keberangkatan {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  position: absolute;
+  left: 350px;
+  top: 60px;
+}
+.stasiun-keberangkatan span {
+  font-size: 12px;
+  color: #959595;
+}
+.stasiun-tujuan {
+  height: 50px;
+  width: 150px;
+  font-size: 14px;
+  position: absolute;
+  left: 350px;
+  top: 120px;
+}
+.stasiun-tujuan span {
+  font-size: 12px;
+  color: #959595;
+}
+.tanda-pengenal {
+  font-size: 14px;
+  position: absolute;
+  top: 210px;
+  left: 10px;
+}
+.nama-pemesan {
+  font-size: 14px;
+  position: absolute;
+  top: 210px;
+  left: 170px;
+}
+.no-hp {
+  font-size: 14px;
+  position: absolute;
+  top: 210px;
+  left: 310px;
+}
+.isi-ket .email {
+  font-size: 14px;
+  position: absolute;
+  top: 210px;
+  left: 480px;
+}
+.batas {
+  position: absolute;
+  width: 770px;
+  height: 0px;
+  left: 0px;
+  top: 238px;
+  border: 1px solid black;
+}
+.isi .ktp {
+  font-size: 14px;
+  color: #b1b1b1;
+  position: absolute;
+  left: 10px;
+  padding-top: 8px;
+}
+.isi .nama {
+  font-size: 14px;
+  color: #b1b1b1;
+  position: absolute;
+  left: 190px;
+  padding-top: 8px;
+}
+.isi .nomor {
+  font-size: 14px;
+  color: #b1b1b1;
+  position: absolute;
+  left: 310px;
+  padding-top: 8px;
+}
+.nama-email {
+  font-size: 14px;
+  color: #b1b1b1;
+  position: absolute;
+  left: 440px;
+  padding-top: 8px;
+}
+
+.btn-bayar {
+  border: 1px solid #ec7ab7 !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%);
+  position: absolute;
+  left: 780px;
+  top: 220px;
+}

@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css?family=Oxanium&display=swap");
+
+.header {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%);
+  height: 45vh;
+}
+.nav-head {
+  height: 8vh;
+  background-color: white;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.25);
+}
+.nav-head-left {
+  padding-left: 15px;
+  padding-top: 12px;
+  font-family: "Oxanium";
+  font-weight: bold;
+  font-size: large;
+  color: #ec7ab7;
+}
+.nav-head-right {
+  float: right;
+  position: absolute;
+  top: 6px;
+  right: 15px;
+}
+.daftar {
+  border: 1px solid #ec7ab7 !important;
+  color: #ec7ab7 !important;
+  padding: 5px 10px !important;
+  margin-right: 10px;
+}
+.daftar:hover {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  color: white !important;
+}
+.login {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  border: 1px solid #ec7ab7 !important;
+  padding: 5px 10px !important;
+}
+.mid-head-left.satu {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  font-weight: bold;
+}
+.mid-head-left.dua {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 105px;
+  left: 40px;
+}
+.mid-head-left.tiga {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 135px;
+  left: 40px;
+}
+.foto1 {
+  height: 140px;
+  width: 250px;
+  background-image: url("./img/foto1.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 75px;
+  left: 700px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.foto2 {
+  height: 140px;
+  width: 250px;
+  background-image: url("./img/foto2.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 60px;
+  left: 680px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.content {
+  background-color: black;
+  height: 50vh;
+}
+.content-1 {
+  height: 200px;
+  width: 960px;
+  background-color: white;
+  position: absolute;
+  top: 240px;
+  left: 152px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25) box;
+}
+.content-1-left {
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-color: #f2f2f2;
+}
+.content-1-right {
+  float: right;
+  width: 80%;
+  height: 100%;
+  background-color: white;
+}
+.content-1-left-top {
+  height: 35px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: 10px;
+}
+
+.train-logo {
+  height: 20px;
+  width: 20px;
+  background-image: url(./img/kereta.png);
+  background-size: cover;
+  position: relative;
+  left: 10px;
+  top: 8px;
+}
+.tiket {
+  position: absolute;
+  top: 5px;
+  left: 35px;
+}
+
+.content-1-right .title {
+  font-size: 20px;
+  padding: 5px;
+}
+.content-1-right .asal {
+  padding: 5px 5px 2px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.form-asal {
+  width: 300px !important;
+  height: 30px !important;
+  margin-left: 5px !important;
+}
+
+.content-1-right .tanggal-berangkat {
+  padding: 10px 5px 2px 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.form-tanggal-berangkat {
+  width: 150px !important;
+  height: 30px !important;
+  margin-left: 5px !important;
+}
+
+.checkbox {
+  position: absolute !important;
+  top: 110px !important;
+  left: 393px !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+}
+.rectangle {
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%);
+  border-radius: 50%;
+  position: absolute;
+  top: 65px;
+  left: 540px;
+}
+.rectangle img {
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.content-1-right .tujuan {
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 45px;
+  left: 615px;
+}
+.form-tujuan {
+  width: 300px !important;
+  height: 30px !important;
+  position: absolute !important;
+  top: 68px !important;
+  left: 615px !important;
+}
+.content-1-right .dewasa {
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 107px;
+  left: 615px;
+}
+.content-1-right .bayi {
+  font-weight: bold;
+  font-size: 14px;
+  position: absolute;
+  top: 107px;
+  left: 705px;
+}
+.increament {
+  border: 1px solid #ced4da;
+  width: 40px;
+  position: absolute;
+  top: 132px;
+  left: 620px;
+  border-radius: 3px;
+  padding-left: 13px;
+}
+.decreament {
+  border: 1px solid #ced4da;
+  width: 40px;
+  position: absolute;
+  top: 132px;
+  left: 701px;
+  border-radius: 3px;
+  padding-left: 13px;
+}
+
+.cari-tiket {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  border: 1px solid #ec7ab7 !important;
+  padding: 5px 10px !important;
+  position: absolute;
+  top: 132px;
+  left: 760px;
+}
+.content-2 {
+  height: 400px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 450px;
+}
+.content-2-list {
+  height: 100%;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+.content-2-list-header {
+  height: 15%;
+  width: 100%;
+  border: 1px solid white;
+  background-color: white;
+}
+.content-2-list-header .nama {
+  position: absolute;
+  left: 50px;
+  top: 35px;
+}
+.content-2-list-header .berangkat {
+  position: absolute;
+  left: 220px;
+  top: 35px;
+}
+.content-2-list-header .tiba {
+  position: absolute;
+  left: 390px;
+  top: 35px;
+}
+.content-2-list-header .durasi {
+  position: absolute;
+  left: 550px;
+  top: 35px;
+}
+.content-2-list-header .harga {
+  position: absolute;
+  left: 790px;
+  top: 35px;
+}
+
+.content-2-list-ket {
+  height: 20%;
+  width: 100%;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+.right1 {
+  height: 25px;
+  width: 30px;
+  position: absolute;
+  top: 87px;
+  left: 310px;
+}
+.right2 {
+  height: 25px;
+  width: 30px;
+  position: absolute;
+  top: 177px;
+  left: 310px;
+}
+.right3 {
+  height: 25px;
+  width: 30px;
+  position: absolute;
+  top: 265px;
+  left: 310px;
+}
+
+.satu .kereta {
+  position: absolute;
+  left: 50px;
+  padding-top: 10px;
+}
+.satu .kereta span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.satu .jam-berangkat {
+  position: absolute;
+  left: 220px;
+  padding-top: 10px;
+}
+.satu .jam-berangkat span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+.satu .jam-tiba {
+  position: absolute;
+  left: 390px;
+  padding-top: 10px;
+}
+.satu .jam-tiba span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.satu .durasi {
+  position: absolute;
+  left: 550px;
+  padding-top: 10px;
+}
+
+.satu .harga {
+  position: absolute;
+  left: 800px;
+  padding-top: 10px;
+  color: #ec7ab7;
+}
+
+.dua .kereta {
+  position: absolute;
+  left: 50px;
+  padding-top: 10px;
+}
+.dua .kereta span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+.dua .jam-berangkat {
+  position: absolute;
+  left: 220px;
+  padding-top: 10px;
+}
+.dua .jam-berangkat span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+.dua .jam-tiba {
+  position: absolute;
+  left: 390px;
+  padding-top: 10px;
+}
+.dua .jam-tiba span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.dua .durasi {
+  position: absolute;
+  left: 550px;
+  padding-top: 10px;
+}
+
+.dua .harga {
+  position: absolute;
+  left: 800px;
+  padding-top: 10px;
+  color: #ec7ab7;
+}
+.tiga .kereta {
+  position: absolute;
+  left: 50px;
+  padding-top: 10px;
+}
+.tiga .kereta span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+.tiga .jam-berangkat {
+  position: absolute;
+  left: 220px;
+  padding-top: 10px;
+}
+.tiga .jam-berangkat span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+.tiga .jam-tiba {
+  position: absolute;
+  left: 390px;
+  padding-top: 10px;
+}
+.tiga .jam-tiba span {
+  color: #b7b7b7;
+  font-size: 14px;
+}
+
+.tiga .durasi {
+  position: absolute;
+  left: 550px;
+  padding-top: 10px;
+}
+
+.tiga .harga {
+  position: absolute;
+  left: 800px;
+  padding-top: 10px;
+  color: #ec7ab7;
+}

@@ -1,0 +1,11 @@
+.nav-head-right .nama {
+  position: absolute;
+  top: 3px;
+  right: 35px;
+  color: #ec7ab7;
+}
+.user {
+  height: 20px;
+  width: 20px;
+  float: none;
+}

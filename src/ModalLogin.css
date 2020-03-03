@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+.modal-content {
+  border: rgb(248, 178, 49);
+}
+div.modal-header-login {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%);
+}
+.title-login {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 900;
+}
+.form-control-email {
+  margin-top: 17px;
+}
+.form-email {
+  margin: 10px 0 auto;
+}
+.form-password {
+  margin-top: 18px;
+}
+
+.div-submit {
+  text-align: center;
+  margin-bottom: 10px auto;
+  height: 50px;
+}
+.submit {
+  padding: 5px 20px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  color: black;
+  width: 300px;
+}
+
+.submit:hover {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.btn-login {
+  background: linear-gradient(90deg, #ec7ab7 0%, #ec7a7a 100%) !important;
+  border: 1px solid #ec7ab7 !important;
+  padding: 5px 10px !important;
+}
