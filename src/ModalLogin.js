@@ -1,15 +1,22 @@
 import React, { Component } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
+import { Modal, Button, Form, ButtonToolbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import "./ModalLogin.css";
 import "./App.css";
 import Dashboard from "./Dashboard";
+import ModalDaftar from "./ModalDaftar";
+import { Redirect } from "react-router-dom";
+import { login } from "./_actions/login";
+import { connect } from "react-redux";
 
-export default class ModalLogin extends Component {
+class ModalLogin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
+      data: [],
+      username: "",
+      password: ""
     };
   }
 
@@ -17,11 +24,41 @@ export default class ModalLogin extends Component {
     this.setState({ show: !visible });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const data = {
+      username: this.state.username,
+      password: this.state.password
+    };
+    console.log(data);
+    this.props.login(data);
+  };
+
+  handleChangeInput = e => {
+    console.log(e.target.name + " : " + e.target.value);
+    this.setState({
+      [e.target.name]: e.target.value
+    });
+  };
+
   render() {
     const { show } = this.state;
+    // const { data } = this.props.loginR;
+    // const { message, token, status } = this.props.loginR.dataUser;
+    const { data, isLogin } = this.props.loginR;
+    console.log(data);
+    if (isLogin === true && data.status === false) {
+      window.localStorage.setItem("token", data.token);
+      window.location.href = "http://localhost:3000/dashboard";
+    } else if (isLogin === true && data.status === true) {
+      window.localStorage.setItem("token", data.token);
+      window.location.href = "http://localhost:3000/admin";
+    }
 
     return (
       <>
+        {/* {data.token != null ? <Redirect to="/dashboard" /> : null} */}
         <Button className="btn-login" onClick={() => this.handleModal(show)}>
           Login
         </Button>
@@ -32,17 +69,17 @@ export default class ModalLogin extends Component {
           onHide={() => this.handleModal(show)}
         >
           <div>
-            <Modal.Header className="modal-header-login" closeButton>
+            <Modal.Header className="modal-header-login">
               <Modal.Title className="title-login">Form Login</Modal.Title>
             </Modal.Header>
           </div>
           <Form onSubmit={this.handleSubmit}>
-            <Form.Group className="form-email">
+            <Form.Group className="form-username">
               <Form.Control
-                type="Email"
-                placeholder="Email"
+                type="text"
+                placeholder="Username"
                 className="form-control-email"
-                name="email"
+                name="username"
                 onChange={this.handleChangeInput}
               ></Form.Control>
             </Form.Group>
@@ -56,15 +93,34 @@ export default class ModalLogin extends Component {
             </Form.Group>
 
             <div className="div-submit">
-              <Link to="/dashboard">
-                <button type="submit" className="submit">
-                  Submit
-                </button>
-              </Link>
+              {/* <Link to="/dashboard"> */}
+              <button type="submit" className="submit">
+                Submit
+              </button>
+              {/* </Link> */}
             </div>
           </Form>
+          <div className="modal-bot">
+            Belum Punya Akun ? Klik
+            <span> disini</span>
+          </div>
         </Modal>
       </>
     );
   }
 }
+
+const mapStateToProp = state => {
+  return {
+    // loginR: state.loginR
+    loginR: state.loginR
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    login: data => dispatch(login(data))
+  };
+};
+
+export default connect(mapStateToProp, mapDispatchToProps)(ModalLogin);

@@ -1,0 +1,11 @@
+.btn-daftar {
+  border: 1px solid #24a5e6 !important;
+  color: #49b3e8 !important;
+  padding: 5px 10px !important;
+  margin-right: 10px;
+  background-color: white !important;
+}
+.btn-daftar:hover {
+  background: linear-gradient(90deg, #49b3e8 0%, #24a5e6 100%) !important;
+  color: white !important;
+}

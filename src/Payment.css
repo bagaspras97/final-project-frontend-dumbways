@@ -1,0 +1,300 @@
+.mid-payment {
+  height: 500px;
+  width: 80%;
+  position: absolute;
+  left: 10%;
+}
+.invoice {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.invoice-left {
+  height: 85%;
+  width: 65%;
+
+  float: left;
+}
+.invoice-right {
+  height: 85%;
+  width: 35%;
+  float: right;
+}
+.invoice-left-top {
+  height: 30%;
+  width: 100%;
+  border: 1px solid #bbbbbb;
+  margin-top: 10px;
+}
+.invoice-left-mid {
+  margin-top: 10px;
+  height: 30%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #bbbbbb;
+}
+.invoice-left-bot {
+  height: 30%;
+  width: 100%;
+}
+
+.alert {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #eeeeee;
+  font-size: 15px;
+}
+.alert img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 33px;
+  left: 10px;
+}
+.alert-ket {
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+.alert-rek {
+  position: absolute;
+  top: 70px;
+  left: 60px;
+}
+.landtick {
+  padding-left: 10px;
+  padding-top: 8px;
+  font-family: "Oxanium";
+  font-weight: bold;
+  font-size: large;
+  color: #49b3e8;
+}
+.invoice-left-mid .tanda-pengenal {
+  position: absolute;
+  top: 220px;
+  left: 10px;
+}
+.invoice-left-mid .nama-pemesan {
+  font-size: 14px;
+  position: absolute;
+  top: 220px;
+  left: 180px;
+}
+
+.invoice-left-mid .no-hp {
+  position: absolute;
+  top: 220px;
+  left: 330px;
+}
+.invoice-left-mid .email {
+  font-size: 14px;
+  position: absolute;
+  top: 220px;
+  left: 500px;
+}
+.batas-invoice {
+  width: 663px;
+  height: 0px;
+  border: 1px solid #bbbbbb;
+  position: absolute;
+  top: 250px;
+}
+.invoice-left-mid .ktp {
+  font-size: 14px;
+  position: absolute;
+  top: 260px;
+  left: 10px;
+}
+.invoice-left-mid .nama {
+  font-size: 14px;
+  position: absolute;
+  top: 260px;
+  left: 182px;
+}
+
+.invoice-left-mid .nomor {
+  font-size: 14px;
+  position: absolute;
+  top: 260px;
+  left: 332px;
+}
+.invoice-left-mid .nama-email-invoice {
+  font-size: 14px;
+  position: absolute;
+  top: 260px;
+  left: 501px;
+}
+.rincian {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.detail-rincian {
+  margin-left: 10px;
+  height: 90px;
+  width: 250px;
+  border: 1px solid #bbbbbb;
+}
+.isi-detail-rincian {
+  font-size: 13px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.detail-rincian-harga {
+  font-size: 13px;
+  position: absolute;
+  top: 362px;
+  left: 180px;
+}
+.total {
+  height: 35px;
+  width: 247px;
+  background-color: #eeeeee;
+  position: absolute;
+  top: 403px;
+  left: 11px;
+}
+.total1 {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.total-harga {
+  font-weight: bold;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+.invoice-left-bot img {
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  top: 320px;
+  left: 320px;
+  border: 1px solid black;
+}
+.img-payment {
+  position: absolute;
+  height: 120px;
+  width: 105px;
+  border: 1px solid #bbbbbb;
+  top: 340px;
+  left: 333px;
+}
+.input-img {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.img-payment img#img-upload {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 120px;
+  width: 105px;
+  z-index: -1;
+}
+.invoice-left-bot .img-upload {
+  height: 120px;
+  width: 105px;
+  position: absolute;
+  border: 1px solid black;
+  right: 0px;
+}
+.btn-payment {
+  margin-left: 10px;
+  width: 250px;
+  border: 1px solid #24a5e6 !important;
+  color: white !important;
+  padding: 5px 10px !important;
+  background: linear-gradient(90deg, #49b3e8 0%, #24a5e6 100%);
+}
+.upload-payment {
+  font-size: 12px;
+  position: absolute;
+  left: 325px;
+  padding-top: 25px;
+}
+.invoice-right-head {
+  height: 90px;
+  width: 90%;
+  margin-left: 17px;
+  margin-top: 10px;
+  border: 1px solid #bbbbbb;
+  background-color: #d0d0d0;
+}
+.invoice-right-head .kereta {
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.invoice-right-head .tanggal {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.invoice-right-head img {
+  height: 70px;
+  width: 60px;
+  position: absolute;
+  right: 45px;
+  top: 60px;
+}
+.invoice-right-mid {
+  height: 178px;
+  width: 90%;
+  margin-left: 17px;
+  border: 1px solid #bbbbbb;
+  background-color: #f5f5f5;
+  border-top: none;
+}
+.invoice-right-mid .nama-kereta {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.invoice-right-mid .nama-kelas {
+  font-size: 12px;
+  padding-left: 10px;
+}
+.invoice-right-mid .bulet {
+  margin-top: 10px;
+  margin-left: 30px;
+  background-color: #f2f2f2;
+  border: 1px solid #49b3e8;
+}
+.invoice-right-mid .garis {
+  position: absolute;
+  top: 240px;
+  left: 693px;
+}
+.invoice-right-mid .bot {
+  margin-left: 30px;
+  position: absolute;
+  top: 262px;
+  background-color: #49b3e8;
+}
+.invoice-right-mid .keberangkatan {
+  position: absolute;
+  top: 190px;
+  left: 740px;
+}
+.invoice-right-mid .tiba-tujuan {
+  position: absolute;
+  top: 257px;
+  left: 740px;
+}
+
+.invoice-right-mid .stasiun-keberangkatan {
+  position: absolute;
+  top: 190px;
+  left: 870px;
+}
+.invoice-right-mid .stasiun-tujuan {
+  position: absolute;
+  top: 257px;
+  left: 870px;
+}
+#nav-head {
+  z-index: 0;
+  position: relative;
+}

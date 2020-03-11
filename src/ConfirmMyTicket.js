@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 import "./MyTicket.css";
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./ConfirmMyTicket.css";
 import DropdownWrapper from "react-dropdown-wrapper";
 import find from "./_actions/getUserA";
 import { connect } from "react-redux";
 
-class MyTicket extends Component {
+class ConfirmMyTicket extends Component {
   render() {
     const { dataLu } = this.props.findUser;
-    console.log("INI => ", this.props.findUser);
     return (
       <div>
         <div className="nav-head" id="nav-head">
@@ -60,11 +60,15 @@ class MyTicket extends Component {
               <div className="isi-tanggal">
                 <div>Kereta Api</div>
                 <span>Saturday, 29 Februari 2070</span>
+                <img
+                  className="gambar-barcode"
+                  src={require("./img/capture.png")}
+                />
               </div>
               <div className="isi-ket">
                 <div className="nama-kereta">Argo Wilis</div>
                 <div className="nama-kelas">Eksekutif</div>
-                <div className="status">pending</div>
+                <div className="status">approved</div>
                 <div className="bulet atas"></div>
                 <div className="garis"></div>
                 <div className="bulet bawah"></div>
@@ -89,9 +93,6 @@ class MyTicket extends Component {
                 <div className="no-hp">No. Handphone</div>
                 <div className="email">Email</div>
                 <div className="batas"></div>
-                <Link to="/payment">
-                  <Button className="btn-bayar">Bayar Sekarang</Button>
-                </Link>
               </div>
               <div className="ktp">31175033003970001</div>
               <div className="nama">{dataLu.username}</div>
@@ -105,6 +106,7 @@ class MyTicket extends Component {
     );
   }
 }
+
 const mapStateToProps = state => {
   console.log("DATA REDUX", state);
   return {
@@ -116,4 +118,4 @@ const mapDispatchToProps = dispatch => {
     find: data => dispatch(find(data))
   };
 };
-export default connect(mapStateToProps, mapDispatchToProps)(MyTicket);
+export default connect(mapStateToProps, mapDispatchToProps)(ConfirmMyTicket);

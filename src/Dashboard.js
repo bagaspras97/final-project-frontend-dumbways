@@ -1,20 +1,29 @@
 import React, { Component } from "react";
 import "./Home.css";
 import "./Dashboard.css";
-import { Button, Form, Image } from "react-bootstrap";
+import { Button, Form, Image, ButtonToolbar } from "react-bootstrap";
 import DropdownWrapper from "react-dropdown-wrapper";
 import { Link } from "react-router-dom";
+import ModalAddTicket from "./ModalAddTicket";
+import find from "./_actions/getUserA";
+import { connect } from "react-redux";
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
+  componentDidMount() {
+    this.props.find();
+  }
+
   render() {
+    const { dataLu } = this.props.findUser;
+    console.log("INI => ", this.props.findUser);
+
     return (
       <div>
         <div className="header">
           <div className="nav-head">
             <div className="nav-head-left">LandTick</div>
             <div className="nav-head-right">
-              <div className="nama">Jauhari</div>
-
+              <div className="nama">{dataLu.username}</div>
               <DropdownWrapper
                 closeOnEsc
                 onStateChange={console.log}
@@ -31,11 +40,16 @@ export default class Dashboard extends Component {
                     />
                     {isShow && (
                       <div className="dropdown">
-                        <div className="dropdown-item">Tiket Saya</div>
                         <Link to="/myticket">
-                          <div className="dropdown-item">Payment</div>
+                          <div className="dropdown-item">Tiket Saya</div>
                         </Link>
-                        <div className="dropdown-item">Logout</div>
+                        <Link to="/payment">
+                          <div className="dropdown-item">Payment</div>
+                          <div className="line-border"></div>
+                        </Link>
+                        <Link to="/">
+                          <div className="dropdown-item">Logout</div>
+                        </Link>
                       </div>
                     )}
                   </>
@@ -106,60 +120,16 @@ export default class Dashboard extends Component {
               <div className="nama">Nama Kereta</div>
               <img className="right1" src={require("./img/right.png")} />
               <div className="berangkat">Berangkat</div>
-              <img className="right2" src={require("./img/right.png")} />
+              {/* <img className="right2" src={require("./img/right.png")} /> */}
               <div className="tiba">Tiba</div>
-              <img className="right3" src={require("./img/right.png")} />
+              {/* <img className="right3" src={require("./img/right.png")} /> */}
               <div className="durasi">Durasi</div>
               <div className="harga">Harga Per Orang</div>
             </div>
-            <div className="content-2-list-ket satu">
-              <div className="kereta">
-                <div>Argo Wilis</div>
-                <span>Eksekutif</span>
-              </div>
-              <div className="jam-berangkat">
-                <div>05.00</div>
-                <span>Gambir</span>
-              </div>
-              <div className="jam-tiba">
-                <div>10.00</div>
-                <span>Surabaya</span>
-              </div>
-              <div className="durasi">5 jam</div>
-              <div className="harga">Rp 250.000</div>
-            </div>
-            <div className="content-2-list-ket dua">
-              <div className="kereta">
-                <div>Argo Wilis</div>
-                <span>Eksekutif</span>
-              </div>
-              <div className="jam-berangkat">
-                <div>05.00</div>
-                <span>Gambir</span>
-              </div>
-              <div className="jam-tiba">
-                <div>10.00</div>
-                <span>Surabaya</span>
-              </div>
-              <div className="durasi">5 jam</div>
-              <div className="harga">Rp 250.000</div>
-            </div>
-            <div className="content-2-list-ket tiga">
-              <div className="kereta">
-                <div>Argo Wilis</div>
-                <span>Eksekutif</span>
-              </div>
-              <div className="jam-berangkat">
-                <div>05.00</div>
-                <span>Gambir</span>
-              </div>
-              <div className="jam-tiba">
-                <div>10.00</div>
-                <span>Surabaya</span>
-              </div>
-              <div className="durasi">5 jam</div>
-              <div className="harga">Rp 250.000</div>
-            </div>
+
+            <ButtonToolbar>
+              <ModalAddTicket />
+            </ButtonToolbar>
           </div>
         </div>
 
@@ -168,3 +138,16 @@ export default class Dashboard extends Component {
     );
   }
 }
+
+const mapStateToProps = state => {
+  console.log("DATA REDUX", state);
+  return {
+    findUser: state.findUser
+  };
+};
+const mapDispatchToProps = dispatch => {
+  return {
+    find: data => dispatch(find(data))
+  };
+};
+export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

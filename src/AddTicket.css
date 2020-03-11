@@ -1,0 +1,31 @@
+.tambah-tiket {
+  font-size: 20px;
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 25px;
+  font-weight: bold;
+}
+.form-tambah-tiket {
+  height: 500px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 100px;
+}
+.form-nama-kereta {
+  margin: 5px 20px auto !important;
+}
+.arrow-bot {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  transform: rotate(90deg);
+}
+.form-tambah-tiket .btn-save {
+  position: absolute !important;
+  left: 520px !important;
+  margin-top: 10px !important;
+  width: 100px !important;
+}

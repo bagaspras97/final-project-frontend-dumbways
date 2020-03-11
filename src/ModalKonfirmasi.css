@@ -1,0 +1,14 @@
+#modalbayar {
+  position: relative;
+  top: 40%;
+}
+div#bayar {
+  text-align: center;
+}
+div#bayar span {
+  font-weight: bold;
+  color: black;
+}
+div#bayar span:hover {
+  text-decoration-style: black;
+}

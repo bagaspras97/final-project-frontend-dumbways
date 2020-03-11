@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Home.css";
 import { Button, Form, Image } from "react-bootstrap";
 import ModalLogin from "./ModalLogin";
+import ModalDaftar from "./ModalDaftar";
 
 export default class Home extends Component {
   render() {
@@ -11,9 +12,10 @@ export default class Home extends Component {
           <div className="nav-head">
             <div className="nav-head-left">LandTick</div>
             <div className="nav-head-right">
-              <Button variant="outline-danger" className="daftar">
+              {/* <Button variant="outline-danger" className="daftar">
                 Daftar
-              </Button>
+              </Button> */}
+              <ModalDaftar />
               <ModalLogin />
             </div>
           </div>
@@ -80,9 +82,9 @@ export default class Home extends Component {
               <div className="nama">Nama Kereta</div>
               <img className="right1" src={require("./img/right.png")} />
               <div className="berangkat">Berangkat</div>
-              <img className="right2" src={require("./img/right.png")} />
+
               <div className="tiba">Tiba</div>
-              <img className="right3" src={require("./img/right.png")} />
+
               <div className="durasi">Durasi</div>
               <div className="harga">Harga Per Orang</div>
             </div>
@@ -102,7 +104,7 @@ export default class Home extends Component {
               <div className="durasi">5 jam</div>
               <div className="harga">Rp 250.000</div>
             </div>
-            <div className="content-2-list-ket dua">
+            {/* <div className="content-2-list-ket dua">
               <div className="kereta">
                 <div>Argo Wilis</div>
                 <span>Eksekutif</span>
@@ -133,10 +135,9 @@ export default class Home extends Component {
               </div>
               <div className="durasi">5 jam</div>
               <div className="harga">Rp 250.000</div>
-            </div>
+            </div> */}
           </div>
         </div>
-
         <div className="footer"></div>
       </div>
     );

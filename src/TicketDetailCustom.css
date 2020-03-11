@@ -1,0 +1,188 @@
+.search:hover {
+  cursor: pointer;
+}
+#invoice-admin {
+  padding-left: 20px;
+  padding-top: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+#kode-invoice {
+  font-size: 12px;
+  padding-left: 20px;
+  color: #767676;
+}
+#custom-rectangle-top {
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 30px;
+  top: 236px;
+  background: white;
+  border: 1px solid #49b3e8;
+}
+#custom-garis {
+  position: absolute;
+  left: 17px;
+  top: 273px;
+  width: 40px;
+}
+#custom-rectangle-bot {
+  height: 13px;
+  width: 13px;
+  position: absolute;
+  left: 30px;
+  top: 296px;
+}
+
+#kereta-tanggal {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+#kereta-tanggal #kereta {
+  font-size: 20px;
+}
+#kereta-tanggal #tanggal {
+  font-size: 12px;
+  color: #767676;
+}
+#kereta-kelas {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+#kereta-kelas #kereta {
+  font-size: 16px;
+}
+#kereta-kelas #kelas {
+  font-size: 12px;
+  color: #767676;
+}
+#barcode {
+  position: absolute;
+  height: 55px;
+  width: 40px;
+  top: 130px;
+  left: 200px;
+}
+#upload-proof {
+  height: 150px;
+  width: 150px;
+  border: 1px solid black;
+  position: absolute;
+  left: 300px;
+  top: 130px;
+  background-color: #eeeeee;
+}
+#tanggal-berangkat {
+  padding-top: 15px;
+  padding-left: 70px;
+  font-size: 14px;
+}
+#tanggal-berangkat #tanggal {
+  font-size: 12px;
+  color: #767676;
+}
+#tanggal-tiba {
+  padding-top: 20px;
+  padding-left: 70px;
+  font-size: 14px;
+}
+#tanggal-tiba #tanggal {
+  font-size: 12px;
+  color: #767676;
+}
+#stasiun-berangkat {
+  left: 200px;
+  font-size: 14px;
+  position: absolute;
+  top: 224px;
+}
+#stasiun-berangkat #stasiun {
+  font-size: 12px;
+  color: #767676;
+}
+#stasiun-tiba {
+  left: 200px;
+  font-size: 14px;
+  position: absolute;
+  top: 282px;
+}
+#stasiun-tiba #stasiun {
+  font-size: 12px;
+  color: #767676;
+}
+#batas-top {
+  width: 100%;
+  height: 0px;
+  border: 1px solid black;
+  position: absolute;
+  top: 345px;
+}
+#header-rincian {
+  font-size: 12px;
+}
+#header-rincian #no-ktp {
+  padding-top: 35px;
+  padding-left: 20px;
+}
+#header-rincian #nama-pemesan {
+  position: absolute;
+  left: 150px;
+  top: 356px;
+}
+#header-rincian #no-hp {
+  position: absolute;
+  left: 265px;
+  top: 356px;
+}
+#header-rincian #email {
+  position: absolute;
+  left: 397px;
+  top: 356px;
+}
+#isi-rincian {
+  font-size: 12px;
+}
+#isi-rincian #no-ktp {
+  padding: 25px;
+  padding-left: 20px;
+}
+#isi-rincian #nama-pemesan {
+  position: absolute;
+  top: 398px;
+  left: 150px;
+}
+#isi-rincian #no-hp {
+  position: absolute;
+  top: 398px;
+  left: 265px;
+}
+#isi-rincian #email {
+  position: absolute;
+  top: 398px;
+  left: 397px;
+}
+#batas-bot {
+  width: 100%;
+  height: 0px;
+  border: 1px solid black;
+  position: absolute;
+  top: 429px;
+}
+#total-harga {
+  height: 40px;
+  width: 100%;
+  background-color: #e6e6e6;
+}
+#total-harga #total {
+  padding-left: 20px;
+  font-size: 20px;
+  padding-top: 5px;
+  font-weight: 700;
+}
+#total-harga #harga {
+  position: absolute;
+  top: 450px;
+  right: 25px;
+  color: #49b3e8;
+}
